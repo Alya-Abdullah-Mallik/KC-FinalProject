@@ -22,42 +22,37 @@ struct ContentView: View {
                     
                     VStack{
                         
-                        HStack{
-                            
-                            Text("11:11")
-                            
-                            Spacer()
-
-                            Image(systemName: "wifi")
-                            
-                            Image(systemName: "battery.75")
-                            
-                        }.padding()
-                            .foregroundColor(.white)
+//                        
+                        
+                        Spacer()
                         
                         HStack{
                             
                             Text("Welcome Back,\n Mallik06")
                                 .font(.largeTitle.bold())
                                 .foregroundColor(.white)
-                                .offset(x: -20, y: 60)
+                                .offset(x: -30, y: -575)
                             
                             Image("Slytherin")
                                 .resizable()
                                 .scaledToFit()
                                 .clipShape(Circle())
                                 .frame(width: 100, height: 150)
-                                .offset(x: 20, y: 60)
+                                .offset(x: 20, y: -570)
 
                         }.padding()
                             .ignoresSafeArea()
+                            .offset(y:-115)
+                    }
+            Spacer()
+            
+            VStack{
                         
-                        ScrollView{
                             
                         Text("Your TBR")
                             .font(.system(size: 25).bold())
                             .foregroundColor(.white)
-                            .offset(x: -145, y: 0)
+                          .offset(x: -145, y: 0)
                         
                         ScrollView(.horizontal){
                             
@@ -107,32 +102,33 @@ struct ContentView: View {
                             Spacer()
                         }
                         
-                        Text("Read Again")
+                        Text("Trending")
                             .font(.system(size: 25).bold())
                             .foregroundColor(.white)
-                            .offset(x: -130, y: 0)
+                            .offset(x: -145, y: 0)
                             
                         ScrollView(.horizontal){
                             
                             HStack{
                                 
-                            ForEach(readAgain){ again in
+                            ForEach(trending){ trend in
                                 
-                                Image(again.bookName)
+                                Image(trend.bookName)
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 100, height: 100)
                                 
-                                NavigationLink(destination: BookInfo(mybooks: again)) {
-                                    Text(again.bookName)
+                                NavigationLink(destination: BookInfo(mybooks: trend)) {
+                                    Text(trend.bookName)
                                         .foregroundColor(.white)
                                         .font(.system(size: 25))
                                     
                                 }
                         }
                     }
-                        };Spacer()
-                
+                        }
+                            Spacer()
+                        
             VStack{
                 
                 Spacer()
@@ -140,7 +136,7 @@ struct ContentView: View {
                 Text("Books By Your Favorite Authors")
                     .font(.system(size: 25).bold())
                     .foregroundColor(.white)
-                    .offset(x: -15, y: 0)
+                   .offset(x: -15, y: 0)
                 
                 ScrollView(.horizontal){
                     
@@ -164,67 +160,45 @@ struct ContentView: View {
                     Spacer()
                 }
                 
-                Text("Trending Books")
-                    .font(.system(size: 25).bold())
-                    .foregroundColor(.white)
-                    .offset(x: -100, y: 0)
                 
-                ScrollView(.horizontal){
+                Spacer()
+                HStack{
                     
-                    HStack{
-                        
-                    ForEach(trending){ trends in
-                        
-                        Image(trends.bookName)
+                    Image(systemName: "books.vertical.fill")
                             .resizable()
-                            .scaledToFit()
-                            .frame(width: 100, height: 100)
-                        
-                        NavigationLink(destination: BookInfo(mybooks: trends)) {
-                            Text(trends.bookName)
-                                .foregroundColor(.white)
-                                .font(.system(size: 25))
-                            
-                        }
-                }
-            }
-                }
-                
-            }
-                    }
-                        HStack{
-                            
-                            Image(systemName: "books.vertical.fill")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .foregroundColor(.white)
-                            
-                                    Spacer()
-                            
-                            NavigationLink(destination: SecondView()) {
-                                Image(systemName: "book.fill")
-                                        .resizable()
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(.white)
-                                
-                                }
-                            
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(.white)
+                    
                             Spacer()
-                            
-                            NavigationLink(destination: ProfileView()) {
-                                Image(systemName: "person.fill")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .foregroundColor(.white)
-                                
-                            }
-                        }.padding()
-                            .offset(x: 0, y: 150)
-
-                }.offset(x: 0, y: -130)
+                    
+                    NavigationLink(destination: SecondView()) {
+                        Image(systemName: "book.fill")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(.white)
+                        
+                        }
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: ProfileView()) {
+                        Image(systemName: "person.fill")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(.white)
+                        
+                    }
+                }.padding()
+                    .offset(x: 0, y: 20)
+                
+            
+                    
+                        }
+                       
+            }
+            }
+                }
         }
-}
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {

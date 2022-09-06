@@ -38,15 +38,7 @@ var recomended = [
     
 ]
 
-var readAgain = [
-    
-BookModel(bookName: "The Alchemist", bookauthor: "Paulo Coelho", bookdesc: "The Alchemist is a classic novel in which a boy named Santiago embarks on a journey seeking treasure in the Egyptian pyramids after having a recurring dream about it and on the way meets mentors, falls in love, and most importantly, learns the true importance of who he is and how to improve himself ."),
-    
-BookModel(bookName: "Pride And Prejudice", bookauthor: "Jane Austin", bookdesc: "Pride and Prejudice follows the turbulent relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner. They must overcome the titular sins of pride and prejudice in order to fall in love and marry."),
-    
-BookModel(bookName: "Little Women", bookauthor: "Louisa Alcott", bookdesc: "The story tells of how the sisters grow up, find love, and find their place in the world. Four sisters and their mother at home. Their father is fighting in the war. Louisa May Alcott semi-autobiographical novel has captured young women and the young at heart for years.")
 
-]
 
 var favauthors = [
     
@@ -62,12 +54,14 @@ BookModel(bookName: "Lapvona", bookauthor: "Ottessa Moshfegh", bookdesc: "In a v
 
 var trending = [
 
+    BookModel(bookName: "Dead Poets Society", bookauthor: "Carpe Diem", bookdesc: "Dead Poets Society tells about the story of non-conventional teaching methods that is done by the one of teacher at Welton Academy. He is John Keating. He teaches the students about the freedom to express their ideas in literature."),
+    
 BookModel(bookName: "Dracula", bookauthor: "Bram Stoker", bookdesc: "The novel narrates the story of Dracula, who attempts to move from Transylvania and go to England to find some new blood and try to spread the curse of the undead. It also tells the story of the fight between Dracula and a group of men and women who had Professor Abraham Van Helsing as their leader."),
 
-BookModel(bookName: "Dead Poets Society", bookauthor: "Carpe Diem", bookdesc: "Dead Poets Society tells about the story of non-conventional teaching methods that is done by the one of teacher at Welton Academy. He is John Keating. He teaches the students about the freedom to express their ideas in literature."),
+
 
 BookModel(bookName: "Crime And Punishment", bookauthor: "Fyodor Dostoyevsky", bookdesc: "Crime and Punishment follows the mental anguish and moral dilemmas of Rodion Raskolnikov, an impoverished ex-student in Saint Petersburg who plans to kill an unscrupulous pawnbroker, an old woman who stores money and valuable objects in her flat.")
 
 ]
 
-var books = [tbr, recomended, readAgain, trending, favauthors]
+var books = [tbr, recomended, trending, favauthors]

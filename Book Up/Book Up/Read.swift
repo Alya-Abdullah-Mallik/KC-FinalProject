@@ -37,6 +37,10 @@ struct Read: View {
                     read(title: "Harry Potter and the Goblet of Fire", rate: "9.5")
                     
                     read(title: "Crime And Punishment", rate: "9.5")
+                                        
+                    read(title: "Pride And Prejudice", rate: "10")
+                    
+                    read(title: "Little Women", rate: "9.5")
                     
                 }
             }

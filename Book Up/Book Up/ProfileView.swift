@@ -25,6 +25,7 @@ struct ProfileView: View {
             
             VStack{
                
+                
                 HStack{
                     
                     Image("Slytherin")
@@ -47,7 +48,7 @@ struct ProfileView: View {
                 
                 VStack{
                     
-                    Text("UserName: Mallik06")
+                    Text("User Name: Mallik06")
                         .padding()
                         .offset(x: -90)
                 

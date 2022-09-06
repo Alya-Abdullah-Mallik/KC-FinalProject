@@ -10,7 +10,6 @@ import SwiftUI
 struct SecondView: View {
     var body: some View {
         
-        NavigationView{
         
         ZStack{
             
@@ -21,6 +20,11 @@ struct SecondView: View {
                 .ignoresSafeArea()
             
             VStack{
+                
+                Text("My Library")
+                    .foregroundColor(.white)
+                    .font(.largeTitle.bold())
+                    .offset(y: 20)
 
                 HStack{
                     
@@ -85,10 +89,10 @@ struct SecondView: View {
                         .cornerRadius(40)
                         .padding()
                 
-            }.offset(y: -100)
+            }.offset(y: -50)
         }
     }
-}
+
 }
 struct SecondView_Previews: PreviewProvider {
     static var previews: some View {
