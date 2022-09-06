@@ -37,8 +37,9 @@ struct BookInfo: View {
                     .padding()
 
                 Text(mybooks.bookdesc)
-                    .font(.title2)
+                    .font(.title2.bold())
                     .foregroundColor(.white)
+                    .padding()
                    
             }
         }

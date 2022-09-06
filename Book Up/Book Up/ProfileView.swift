@@ -21,7 +21,7 @@ struct ProfileView: View {
             Text("Edit:")
                 .font(.title2)
                 .foregroundColor(.blue)
-                .offset(x: -160, y: -430)
+                .offset(x: -160, y: -400)
             
             VStack{
                
@@ -60,6 +60,10 @@ struct ProfileView: View {
                     Text("Email: Joincoded@gmail.com")
                         .padding()
                         .offset(x: -50)
+                    
+                    Text("Password: ************")
+                        .padding()
+                        .offset(x: -85)
 
                     Text("Joined: September 12, 2017")
                         .padding()

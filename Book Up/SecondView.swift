@@ -35,8 +35,8 @@ struct SecondView: View {
                         Text("Your To Be Read")
                             .foregroundColor(.white)
                             .font(.title2)
-                        
                     }
+                    
                    }.padding()
                     .background(.gray.opacity(0.2))
                     .background(.black.opacity(0.9))
