@@ -35,13 +35,19 @@ struct BookInfo: View {
                     .font(.title.bold())
                     .foregroundColor(.white)
                     .padding()
+                    .background(.black.opacity(0.6))
+                    .cornerRadius(20)
+                    .padding()
 
                 Text(mybooks.bookdesc)
                     .font(.title2.bold())
                     .foregroundColor(.white)
                     .padding()
+                    .background(.black.opacity(0.6))
+                    .cornerRadius(20)
+                    .padding()
                    
-            }
+            }.offset(y: -30)
         }
     }
 }

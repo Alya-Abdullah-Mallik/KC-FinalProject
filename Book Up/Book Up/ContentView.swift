@@ -22,7 +22,7 @@ struct ContentView: View {
                     
                     VStack{
                         
-//                        
+//
                         
                         Spacer()
                         
@@ -52,7 +52,7 @@ struct ContentView: View {
                         Text("Your TBR")
                             .font(.system(size: 25).bold())
                             .foregroundColor(.white)
-                          .offset(x: -145, y: 0)
+                          .offset(x: -145, y: 5)
                         
                         ScrollView(.horizontal){
                             

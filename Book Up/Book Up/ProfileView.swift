@@ -21,7 +21,7 @@ struct ProfileView: View {
             Text("Edit:")
                 .font(.title2)
                 .foregroundColor(.blue)
-                .offset(x: -160, y: -400)
+                .offset(x: -160, y: -380)
             
             VStack{
                
@@ -80,7 +80,7 @@ struct ProfileView: View {
                 }.font(.title3.bold())
                     .foregroundColor(.white)
                 
-            }.offset(y: -130)
+            }.offset(y: -80)
         }
     }
 }

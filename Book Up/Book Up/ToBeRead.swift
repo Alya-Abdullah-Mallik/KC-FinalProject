@@ -10,6 +10,7 @@ import SwiftUI
 struct ToBeRead: View {
     var body: some View {
         
+        
         ZStack{
             
             Color.green.opacity(0.8)
@@ -66,6 +67,7 @@ struct tbrbooks: View {
             Text(name)
                 .foregroundColor(.white)
                 .font(.title3.bold())
+            
             
         }.padding()
             .background(.gray.opacity(0.2))
